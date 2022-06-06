@@ -41,12 +41,12 @@ function Dashboard() {
   }, [router])
 
   return (
-    <>
-      <Typography component="h1" variant="h5">
+     <>
+       <Typography component="h1" variant="h5">
         Dashboard
-      </Typography>
-      <h3>This is secret page</h3>
-    </>
+       </Typography>
+       <h3>This is secret page </h3>
+     </>
   )
 }
 

@@ -39,8 +39,8 @@ export default async (req, res) => {
       const { origin } = absoluteUrl(req)
       const link = `${origin}/src/user/email/${token}`
 
-      const message = `<div>Click on the link below to verify your email, if the link is not working then please paste into the browser.</div></br>
-    <div>link:${link}</div>`
+      const message = ` <div>Click on the link below to verify your email, if the link is not working then please paste into the browser. </div> </br>
+     <div>link:${link} </div>`
 
       // console.log("message", message)
 

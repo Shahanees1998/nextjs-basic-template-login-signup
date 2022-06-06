@@ -51,10 +51,10 @@ export default function SignIn() {
   }
 
   return (
-    <>
-      <Container component="main" maxWidth="xs">
-        <CssBaseline />
-        <Box
+     <>
+       <Container component="main" maxWidth="xs">
+         <CssBaseline />
+         <Box
           sx={{
             marginTop: 8,
             display: "flex",
@@ -62,19 +62,19 @@ export default function SignIn() {
             alignItems: "center",
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
-            <LockOutlinedIcon />
-          </Avatar>
-          <Typography component="h1" variant="h5">
+           <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
+             <LockOutlinedIcon />
+           </Avatar>
+           <Typography component="h1" variant="h5">
             Reset Password
-          </Typography>
-          <Box
+           </Typography>
+           <Box
             component="form"
             onSubmit={handleSubmit}
             noValidate
             sx={{ mt: 1 }}
           >
-            <TextField
+             <TextField
               margin="normal"
               required
               fullWidth
@@ -84,7 +84,7 @@ export default function SignIn() {
               id="password"
               autoComplete="current-password"
             />
-            <TextField
+             <TextField
               margin="normal"
               required
               fullWidth
@@ -96,33 +96,33 @@ export default function SignIn() {
               autoFocus
             />
 
-            {/* <FormControlLabel
-              control={<Checkbox value="remember" color="primary" />}
+            {/*  <FormControlLabel
+              control={ <Checkbox value="remember" color="primary" />}
               label="Remember me"
             /> */}
-            <Button
+             <Button
               type="submit"
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2, backgroundColor: "secondary.main" }}
             >
               Submit
-            </Button>
-            {/* <Grid container>
-              <Grid item xs>
-                <Link href="#" variant="body2">
+             </Button>
+            {/*  <Grid container>
+               <Grid item xs>
+                 <Link href="#" variant="body2">
                   Forgot password?
-                </Link>
-              </Grid>
-              <Grid item>
-                <Link href="#" variant="body2">
+                 </Link>
+               </Grid>
+               <Grid item>
+                 <Link href="#" variant="body2">
                   {"Don't have an account? Sign Up"}
-                </Link>
-              </Grid>
-            </Grid> */}
-          </Box>
-        </Box>
-      </Container>
-    </>
+                 </Link>
+               </Grid>
+             </Grid> */}
+           </Box>
+         </Box>
+       </Container>
+     </>
   )
 }

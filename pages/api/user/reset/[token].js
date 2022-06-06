@@ -16,7 +16,7 @@ export default async (req, res) => {
       if (password !== conPassword) {
         return res.status(400).json({ error: "Passwords do not match" })
       }
-      if (password.length < 6) {
+      if (password.length  < 6) {
         return res
           .status(400)
           .json({ error: "Password needs to be at least 6 characters" })

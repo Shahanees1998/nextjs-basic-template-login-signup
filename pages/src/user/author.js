@@ -2,9 +2,9 @@ import { getSession } from "next-auth/react"
 import Wrapper from "../../../components/auth/wrapper"
 const Author = () => {
   return (
-    <Wrapper>
-      <h1>Author </h1>
-    </Wrapper>
+     <Wrapper>
+       <h1>Author  </h1>
+     </Wrapper>
   )
 }
 

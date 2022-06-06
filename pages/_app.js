@@ -22,24 +22,24 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   // const theme = createTheme()
 
   return (
-    <React.Fragment>
-      <Head>
-        <title>My page</title>
-        <meta
+     <React.Fragment>
+       <Head>
+         <title>My page </title>
+         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
-      </Head>
-      <ThemeProvider theme={theme}>
-        <SessionProvider session={session}>
-          <Layout>
-            <ToastContainer />
-            <Component {...pageProps} />
-          </Layout>
-        </SessionProvider>
-        <CssBaseline />
-      </ThemeProvider>
-    </React.Fragment>
+       </Head>
+       <ThemeProvider theme={theme}>
+         <SessionProvider session={session}>
+           <Layout>
+             <ToastContainer />
+             <Component {...pageProps} />
+           </Layout>
+         </SessionProvider>
+         <CssBaseline />
+       </ThemeProvider>
+     </React.Fragment>
   )
 }
 

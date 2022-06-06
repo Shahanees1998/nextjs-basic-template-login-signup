@@ -43,10 +43,10 @@ export default function SignIn() {
   }
 
   return (
-    <>
-      <Container component="main" maxWidth="xs">
-        <CssBaseline />
-        <Box
+     <>
+       <Container component="main" maxWidth="xs">
+         <CssBaseline />
+         <Box
           sx={{
             marginTop: 8,
             display: "flex",
@@ -54,20 +54,20 @@ export default function SignIn() {
             alignItems: "center",
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
-            <ForwardToInboxIcon />
-          </Avatar>
-          <Typography component="h1" variant="h5">
+           <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
+             <ForwardToInboxIcon />
+           </Avatar>
+           <Typography component="h1" variant="h5">
             Email Reset Link
-          </Typography>
-          <Box
+           </Typography>
+           <Box
             component="form"
             onSubmit={handleSubmit}
             noValidate
             sx={{ mt: 1 }}
           >
-            <Grid container spacing={2}>
-              <TextField
+             <Grid container spacing={2}>
+               <TextField
                 margin="normal"
                 required
                 fullWidth
@@ -77,30 +77,30 @@ export default function SignIn() {
                 autoComplete="email"
                 autoFocus
               />
-              <Button
+               <Button
                 type="submit"
                 fullWidth
                 variant="contained"
                 sx={{ mt: 3, mb: 2, backgroundColor: "secondary.main" }}
               >
                 Submit
-              </Button>
-              <Grid container>
-                <Grid item xs>
-                  <Link href="/src/user/login" variant="body2">
+               </Button>
+               <Grid container>
+                 <Grid item xs>
+                   <Link href="/src/user/login" variant="body2">
                     Have an account ? Login
-                  </Link>
-                </Grid>
-                <Grid item>
-                  <Link href="/src/user/register" variant="body2">
+                   </Link>
+                 </Grid>
+                 <Grid item>
+                   <Link href="/src/user/register" variant="body2">
                     {"Don't have an account? Sign Up"}
-                  </Link>
-                </Grid>
-              </Grid>
-            </Grid>
-          </Box>
-        </Box>
-      </Container>
-    </>
+                   </Link>
+                 </Grid>
+               </Grid>
+             </Grid>
+           </Box>
+         </Box>
+       </Container>
+     </>
   )
 }

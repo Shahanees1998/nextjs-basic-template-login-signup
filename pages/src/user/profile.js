@@ -35,26 +35,26 @@ const Profile = () => {
   }
 
   return (
-    <div>
-      <h1>Profile </h1>
+     <div>
+       <h1>Profile  </h1>
 
       {dbUser && (
-        <>
-          <Typography component="h1" variant="h5">
+         <>
+           <Typography component="h1" variant="h5">
             {dbUser.name}
-          </Typography>
-          <Typography component="h1" variant="h5">
+           </Typography>
+           <Typography component="h1" variant="h5">
             {dbUser.email}
-          </Typography>
-          <Typography component="h1" variant="h5">
+           </Typography>
+           <Typography component="h1" variant="h5">
             {dbUser.validEmail}{" "}
             {dbUser.validEmail === "not" && (
-              <Button onClick={emailReset}>Send Token</Button>
+               <Button onClick={emailReset}>Send Token </Button>
             )}
-          </Typography>
-        </>
+           </Typography>
+         </>
       )}
-    </div>
+     </div>
   )
 }
 

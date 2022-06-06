@@ -72,10 +72,10 @@ function Login() {
   }
 
   return (
-    <>
-      <Container component="main" maxWidth="xs">
-        <CssBaseline />
-        <Box
+     <>
+       <Container component="main" maxWidth="xs">
+         <CssBaseline />
+         <Box
           sx={{
             marginTop: 8,
             display: "flex",
@@ -83,19 +83,19 @@ function Login() {
             alignItems: "center",
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
-            <LockOutlinedIcon />
-          </Avatar>
-          <Typography component="h1" variant="h5">
+           <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
+             <LockOutlinedIcon />
+           </Avatar>
+           <Typography component="h1" variant="h5">
             Sign in
-          </Typography>
-          <Box
+           </Typography>
+           <Box
             component="form"
             noValidate
             sx={{ mt: 1 }}
             onSubmit={SubmitHandler}
           >
-            <TextField
+             <TextField
               margin="normal"
               required
               fullWidth
@@ -107,7 +107,7 @@ function Login() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
-            <TextField
+             <TextField
               margin="normal"
               required
               fullWidth
@@ -120,7 +120,7 @@ function Login() {
               onChange={(e) => setPassword(e.target.value)}
             />
 
-            <Grid
+             <Grid
               container
               sx={{
                 mt: 2,
@@ -130,33 +130,33 @@ function Login() {
                 borderColor: "grey.400",
               }}
             >
-              <GoogleLoginButton onClick={() => signIn("google")} />
-            </Grid>
+               <GoogleLoginButton onClick={() => signIn("google")} />
+             </Grid>
 
-            <Button
+             <Button
               type="submit"
               fullWidth
               variant="contained"
               sx={{ mt: 2, mb: 2, backgroundColor: "secondary.main" }}
             >
               Sign In
-            </Button>
-            <Grid container>
-              <Grid item xs>
-                <Link href="/src/user/forget" variant="body2">
+             </Button>
+             <Grid container>
+               <Grid item xs>
+                 <Link href="/src/user/forget" variant="body2">
                   Forgot password?
-                </Link>
-              </Grid>
-              <Grid item>
-                <Link href="/src/user/register" variant="body2">
+                 </Link>
+               </Grid>
+               <Grid item>
+                 <Link href="/src/user/register" variant="body2">
                   {"Don't have an account? Sign Up"}
-                </Link>
-              </Grid>
-            </Grid>
-          </Box>
-        </Box>
-      </Container>
-    </>
+                 </Link>
+               </Grid>
+             </Grid>
+           </Box>
+         </Box>
+       </Container>
+     </>
   )
 }
 

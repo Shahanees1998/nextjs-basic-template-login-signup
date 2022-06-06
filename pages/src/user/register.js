@@ -84,10 +84,10 @@ function Register() {
   }
 
   return (
-    <ThemeProvider>
-      <Container component="main" maxWidth="xs">
-        <CssBaseline />
-        <Box
+     <ThemeProvider>
+       <Container component="main" maxWidth="xs">
+         <CssBaseline />
+         <Box
           sx={{
             marginTop: 8,
             display: "flex",
@@ -95,21 +95,21 @@ function Register() {
             alignItems: "center",
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
-            <LockOutlinedIcon />
-          </Avatar>
-          <Typography component="h1" variant="h5">
+           <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
+             <LockOutlinedIcon />
+           </Avatar>
+           <Typography component="h1" variant="h5">
             Sign up
-          </Typography>
-          <Box
+           </Typography>
+           <Box
             component="form"
             noValidate
             onSubmit={SubmitHandler}
             sx={{ mt: 3 }}
           >
-            <Grid container spacing={2}>
-              <Grid item xs={12} sm={6}>
-                <TextField
+             <Grid container spacing={2}>
+               <Grid item xs={12} sm={6}>
+                 <TextField
                   autoComplete="given-name"
                   name="firstName"
                   required
@@ -120,9 +120,9 @@ function Register() {
                   value={firstName}
                   onChange={(e) => setFirstName(e.target.value)}
                 />
-              </Grid>
-              <Grid item xs={12} sm={6}>
-                <TextField
+               </Grid>
+               <Grid item xs={12} sm={6}>
+                 <TextField
                   required
                   fullWidth
                   id="lastName"
@@ -132,9 +132,9 @@ function Register() {
                   value={lastName}
                   onChange={(e) => setLastName(e.target.value)}
                 />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
+               </Grid>
+               <Grid item xs={12}>
+                 <TextField
                   required
                   fullWidth
                   id="email"
@@ -144,9 +144,9 @@ function Register() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
+               </Grid>
+               <Grid item xs={12}>
+                 <TextField
                   required
                   fullWidth
                   name="password"
@@ -157,9 +157,9 @@ function Register() {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                 />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
+               </Grid>
+               <Grid item xs={12}>
+                 <TextField
                   margin="normal"
                   required
                   fullWidth
@@ -171,9 +171,9 @@ function Register() {
                   value={conPassword}
                   onChange={(e) => setConPassword(e.target.value)}
                 />
-              </Grid>
-            </Grid>
-            <Grid
+               </Grid>
+             </Grid>
+             <Grid
               container
               sx={{
                 mt: 2,
@@ -183,28 +183,28 @@ function Register() {
                 borderColor: "grey.400",
               }}
             >
-              <GoogleLoginButton onClick={() => signIn("google")} />
-            </Grid>
+               <GoogleLoginButton onClick={() => signIn("google")} />
+             </Grid>
 
-            <Button
+             <Button
               type="submit"
               fullWidth
               variant="contained"
               sx={{ mt: 2, mb: 2, backgroundColor: "secondary.main" }}
             >
               Sign Up
-            </Button>
-            <Grid container justifyContent="flex-end">
-              <Grid item>
-                <Link href="#" variant="body2">
+             </Button>
+             <Grid container justifyContent="flex-end">
+               <Grid item>
+                 <Link href="#" variant="body2">
                   Already have an account? Sign in
-                </Link>
-              </Grid>
-            </Grid>
-          </Box>
-        </Box>
-      </Container>
-    </ThemeProvider>
+                 </Link>
+               </Grid>
+             </Grid>
+           </Box>
+         </Box>
+       </Container>
+     </ThemeProvider>
   )
 }
 

@@ -61,10 +61,10 @@ export default function ButtonAppBar() {
   }
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
-        <Toolbar>
-          <IconButton
+     <Box sx={{ flexGrow: 1 }}>
+       <AppBar position="static">
+         <Toolbar>
+           <IconButton
             size="large"
             edge="start"
             color="inherit"
@@ -72,37 +72,37 @@ export default function ButtonAppBar() {
             sx={{ mr: 2 }}
             // sx={{ flexGrow: 1 }}
           >
-            <Link href="http://localhost:3000">
-              <LockOutlinedIcon />
-            </Link>
-          </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+             <Link href="http://localhost:3000">
+               <LockOutlinedIcon />
+             </Link>
+           </IconButton>
+           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             AuthApp
-          </Typography>
-          <Link href="/src/user/profile">
-            <Button color="inherit">{userState && userState.name}</Button>
-          </Link>
+           </Typography>
+           <Link href="/src/user/profile">
+             <Button color="inherit">{userState && userState.name} </Button>
+           </Link>
 
-          <Box sx={{ ml: 2 }}>
+           <Box sx={{ ml: 2 }}>
             {userState ? (
-              <>
-                <Button color="inherit" onClick={logoutHandler}>
+               <>
+                 <Button color="inherit" onClick={logoutHandler}>
                   Logout
-                </Button>
-              </>
+                 </Button>
+               </>
             ) : (
-              <>
-                <Link href="/src/user/login">
-                  <Button color="inherit">Login</Button>
-                </Link>
-                <Link href="/src/user/register">
-                  <Button color="inherit">Register</Button>
-                </Link>
-              </>
+               <>
+                 <Link href="/src/user/login">
+                   <Button color="inherit">Login </Button>
+                 </Link>
+                 <Link href="/src/user/register">
+                   <Button color="inherit">Register </Button>
+                 </Link>
+               </>
             )}
-          </Box>
-        </Toolbar>
-      </AppBar>
-    </Box>
+           </Box>
+         </Toolbar>
+       </AppBar>
+     </Box>
   )
 }
