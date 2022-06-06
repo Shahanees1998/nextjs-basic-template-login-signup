@@ -14,6 +14,7 @@ const Wrapper = ({ children }) => {
     ? session?.user
     : ""
 
+    
   useEffect(() => {
     if (!user) {
       router.push("/src/user/login")

@@ -8,6 +8,7 @@ import MenuIcon from "@mui/icons-material/Menu"
 import { parseCookies } from "nookies"
 import { useRouter } from "next/router"
 import Link from "next/link"
+
 import { useSession, signOut } from "next-auth/react"
 import cookie from "js-cookie"
 import { useEffect, useState } from "react"

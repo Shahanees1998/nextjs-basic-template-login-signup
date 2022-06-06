@@ -12,9 +12,11 @@ const userSchema = mongoose.Schema({
     unique: true,
     validate: [validator.isEmail, "Please enter valid email address"],
   },
+
   password: {
     type: String,
   },
+  
   resetToken: { type: String },
   update: { type: String },
   validEmail: { type: String, default: "not" },

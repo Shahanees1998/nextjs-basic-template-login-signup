@@ -8,6 +8,7 @@ export const sendEmail = (options) => {
       pass: process.env.EMAIL_PASSWORD,
     },
   })
+  
   const mailOptions = {
     from: process.env.EMAIL_FROM,
     to: options.to,
