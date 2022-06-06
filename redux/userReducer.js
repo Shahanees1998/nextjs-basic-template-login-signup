@@ -4,6 +4,7 @@ import {
   LOAD_USER_FAIL,
 } from "./userTypes"
 
+
 export const profileReducer = (state = { dbUser: null }, action) => {
   switch (action.type) {
     case LOAD_USER_REQUEST:
